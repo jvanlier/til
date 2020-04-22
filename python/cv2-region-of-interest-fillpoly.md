@@ -3,7 +3,7 @@ CV2 Region Of Interest `fillPoly`
 
 Creating a Region of Interest Polygon and mask out everything else.
 
-I've already done this many times before, yet I end up looking it up in old code more often than I'd like. Here's one version that works on RGB images with 3 channels and on gray scale images with just 1 channel.
+I've already done this many times before, yet I end up looking it up in old code more often than I'd like. Here's one version that works on RGB images with 3 channels and on grayscale images with just 1 channel.
 
 ```python
 def apply_roi(image, roi):
