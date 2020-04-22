@@ -13,4 +13,8 @@ def apply_roi(image, roi):
     return cv2.bitwise_and(image, stencil)
 ```
 
-Arg `roi` is a 2d numpy array with integers, for example: `np.array([[(100, 540), (470, 310), (480, 310), (910, 540)]], dtype=np.int32)`.
+Arg `roi` is a 2d numpy array with integers, for example: 
+
+```python
+np.array([[(100, 540), (470, 310), (480, 310), (910, 540)]], dtype=np.int32)
+```
