@@ -1,4 +1,4 @@
-# Embedding Local Video in Jupyter Notebook
+# Embed Local Video in Jupyter Notebook
 
 Showing a video that was just created with Python code in a Notebook, with timeline and controls, is as simple as:
 
