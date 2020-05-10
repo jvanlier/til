@@ -13,7 +13,7 @@ plt.imshow(binary_img, cmap="gray")
 It may sometimes be needed to replicate the pixel values across the 3 channels, e.g. to include them in a side-by-side image or video with the original.
 That can be done easily with numpy as follows:
 
-```
+```python
 img = np.repeat((binary_img * 255)[:, :, np.newaxis], 3, axis=2)
 ```
 
