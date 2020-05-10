@@ -18,5 +18,5 @@ img = np.repeat((binary_img * 255)[:, :, np.newaxis], 3, axis=2)
 ```
 
 Couple pointers:
-- The `* 255` is included because of the asumption that pixel values are from 0 to 1. Change accordingly if they aren't.
+- The `* 255` is included because of the asumption that pixel values range from 0 to 1. Change accordingly if they aren't.
 - Might need to replace `binary_img` with `binary_img.astype(np.uint8)` if it isn't that dtype already.
