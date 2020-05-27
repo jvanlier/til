@@ -32,9 +32,9 @@ def plot_many_images(img_paths: Collection[Union[str, Path]],
         img_paths: Collection (e.g. List/Array) of Path instances or plain old strings 
             with path of images to plot.
         suptitle: Title on top.
-        ncols: number of columns
-        figsize_x: the width of the image
-        figsize_y_per_row: the height of the image *per row*. Usually requires some tweaking 
+        ncols: Number of columns.
+        figsize_x: The width of the image.
+        figsize_y_per_row: The height of the image *per row*. Usually requires some tweaking 
             depending on image size.
     """
     nrows = ceil(len(img_paths) / ncols)
