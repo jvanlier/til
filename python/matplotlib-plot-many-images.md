@@ -23,6 +23,7 @@ def plot_many_images(img_paths: Collection[Union[str, Path]],
                      figsize_x: int = 18, 
                      figsize_y_per_row: int = 4):
     """Plot many images using subplots.
+
     Automatically determines appropriate number of rows and turns off axes when a row can't be 
     filled completely.
     Automatically adjusts tight_layout rect if suptitle is provided.
@@ -30,7 +31,7 @@ def plot_many_images(img_paths: Collection[Union[str, Path]],
     Args:
         img_paths: Collection (e.g. List/Array) of Path instances or plain old strings 
             with path of images to plot.
-	suptitle: Title on top.
+        suptitle: Title on top.
         ncols: number of columns
         figsize_x: the width of the image
         figsize_y_per_row: the height of the image *per row*. Usually requires some tweaking 
