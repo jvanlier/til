@@ -1,4 +1,4 @@
-Changing Spark resources only possible with `spark.stop()` in `deploy-mode client`
+Changing Spark resources only possible with `spark.stop()` 
 ===========
 
 When working with Spark, sometimes you only need few executors and sometimes you need many.
@@ -17,8 +17,8 @@ print(spark.conf.isModifiable("spark.default.parallelism"))
 
 This all returns `False`. (However, `spark.sql.*` stuff such as `spark.sql.shuffle.partitions` does return `True`.)
 
-Ok, then `spark.stop()` and run `SparkSession.builder.getOrCreate()` again, right? "It works in my Notebook!". And in fact it does: it creates a new SparkSession with new new settings and you get a new YARN id.
-
-As it turns out, this does _not_ work with `deploy-mode cluster`, probably because it deallocates the container that the driver lives in. In my current project, the scientists develop with `deploy-mode client` and we run the same code in production with `deploy-mode cluster`, so this is kind of a big deal.
+The only way to change executor resources, as far as I know, is to `spark.stop()` and create it again with 
+`SparkSession.builder.getOrCreate()`.
+But beware: this does not work in `deploy-mode cluster`: [spark-stop-and-restart-only-possible-in-deploy-mode-client.md](spark-stop-and-restart-only-possible-in-deploy-mode-client.md.md)
 
 N.b.: this was only tested with Spark-on-YARN, things might be different in standalone mode.
