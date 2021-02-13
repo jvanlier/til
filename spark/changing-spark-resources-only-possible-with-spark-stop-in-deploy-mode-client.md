@@ -1,4 +1,4 @@
-Changing Spark resources only possible with `deploy-mode client`
+Changing Spark resources only possible with `spark.stop()` in `deploy-mode client`
 ===========
 
 When working with Spark, sometimes you only need few executors and sometimes you need many.
