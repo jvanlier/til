@@ -19,6 +19,6 @@ This all returns `False`. (However, `spark.sql.*` stuff such as `spark.sql.shuff
 
 The only way to change executor resources, as far as I know, is to `spark.stop()` and create it again with 
 `SparkSession.builder.getOrCreate()`.
-But beware: this does not work in `deploy-mode cluster`: [spark-stop-and-restart-only-possible-in-deploy-mode-client.md](spark-stop-and-restart-only-possible-in-deploy-mode-client.md.md)
+But beware: this does not work in `deploy-mode cluster`: [spark-stop-and-restart-only-possible-in-deploy-mode-client.md](spark-stop-and-restart-only-possible-in-deploy-mode-client.md)
 
 N.b.: this was only tested with Spark-on-YARN, things might be different in standalone mode.
