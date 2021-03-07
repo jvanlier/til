@@ -19,7 +19,7 @@ This will do the following renames:
 2020-03-30_rococo_double_s04_002.html -> 2020-03-30_RococoDouble_s04_002.html
 ```
 
-It is quite safe, it checks for example if more than 1 source file will map to the same destinatio n file and refuse to operate if that is the case. 
+It is quite safe: it checks, for example, if more than 1 source file will map to the same destination file and refuse to operate if that is the case. 
 
 Use `-n` for a dry run to inspect the results before applying it.
 
